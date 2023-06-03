@@ -1,0 +1,23 @@
+
+.app__navbar {
+    background-color: #fff;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 199;
+}
+
+.app__navbar-container {
+    padding: 1.5rem 1rem;
+}
+
+.app__navbar .-nav {
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.app__navbar button {
+    font-size: .93175rem;
+}
