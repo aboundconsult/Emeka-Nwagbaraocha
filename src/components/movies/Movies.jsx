@@ -4,25 +4,28 @@ import "./movies.css";
 const Movies = () => {
     const [ active, setActive ] = useState("all");
     return (
-        <div className="app__movies" id="movies">
+        <div className="app__movies section__container" id="movies">
             <div className="app__movies-container">
                 <div className="app__movies-header">
                     <h2> Movies Featured In </h2>
                     <div className="app__movies-header_nav -filters d-flex item-center gap-0 justify-center flex-wrap">
-                        <div className={`-filter ${active === "all" ? "-active" : ""}`}>
+                        <div 
+                            className={`-filter ${active === "all" ? "-active" : ""}`}
+                            onClick={()=> setActive("all")}
+                        >
                             <span> All </span>
                         </div>
-                        <div className={`-filter ${active === "series" ? "-active" : ""}`}>
+                        <div 
+                            className={`-filter ${active === "series" ? "-active" : ""}`}
+                            onClick={()=> setActive("series")}
+                        >
                             <span> TV Series </span>
                         </div>
-                        <div className={`-filter ${active === "action" ? "-active" : ""}`}>
-                            <span> Action </span>
-                        </div>
-                        <div className={`-filter ${active === "adventure" ? "-active" : ""}`}>
-                            <span> Adventure </span>
-                        </div>
-                        <div className={`-filter ${active === "comedy" ? "-active" : ""}`}>
-                            <span> Comedy </span>
+                        <div 
+                            className={`-filter ${active === "movie" ? "-active" : ""}`}
+                            onClick={()=> setActive("movie")}
+                        >
+                            <span> Movies </span>
                         </div>
                     </div>
                 </div>

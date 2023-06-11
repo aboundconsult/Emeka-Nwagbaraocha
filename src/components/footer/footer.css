@@ -1,1 +1,55 @@
 
+.app__footer {
+    padding: 5rem;
+    width: 100%;
+    background-color: hsl(252, 30%, 17%);
+    color: #fff;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+.app__footer a.-btn {
+    background-color: #fff;
+    border-radius: 133.333px;
+    color: #000;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .75rem 1.5rem;
+    width: 180px;
+}
+
+.app__footer-row {
+    margin: auto;
+    max-width: 768px;
+}
+
+.app__footer h4 {
+    font-size: 3rem;
+    line-height: 110%;
+}
+
+.app__footer h5 {
+
+}
+
+.app__footer .-socials {
+    margin-top: 2rem;
+}
+
+.-socials svg {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__footer {
+        padding: 2rem ;
+    }
+    .app__footer-row {
+        width: 100%;
+    }
+    .app__footer h4 {
+        font-size: 1.5rem;
+    }
+}

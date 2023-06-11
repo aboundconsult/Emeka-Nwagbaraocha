@@ -1,16 +1,36 @@
 
 .app__navbar {
-    background-color: #fff;
-    border-bottom: 1px solid gainsboro;
-    width: 100%;
-
-    position: sticky;
+    color: lightgray;
+    height: 5rem;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 199;
 }
 
+.app__navbar.appear {
+    background-color: hsl(252, 30%, 17%);
+}
+
 .app__navbar-container {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
+}
+
+.-logo {
+    border-left: 3px solid #fff;
+    padding-left: 0.25rem;
+}
+
+.-logo a {
+    font-family: cursive;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    /* margin-left: 0.; */
+}
+
+.-logo a span:last-child {
+    color: rgb(54, 208, 246);
 }
 
 .app__navbar .-nav {
@@ -20,4 +40,107 @@
 
 .app__navbar button {
     font-size: .93175rem;
+}
+
+.app__navbar a {
+    transition: all .25s ease-in-out;
+}
+
+.app__navbar a.active {
+    color: #fff;
+}
+
+.app__navbar a:hover {
+    color: #fff;
+}
+
+.-btn {
+    background-color: #fff;
+    border-radius: 133.33px;
+    color: #000;
+    padding: .45rem 1.75rem;
+}
+
+.app__nav-menu {
+    cursor: pointer;
+    display: none;
+    z-index: 101;
+}
+
+.app__nav-menu span {
+    display: block;
+    border-bottom: 3px solid #fff;
+    margin-bottom: .625rem;
+    transition: all .25s ease-in;
+    width: 1.75rem;
+}
+
+.app__nav-menu span:last-child {
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__navbar-col.-center {
+        border-bottom: 1px solid #fff;
+        height: 0;
+        overflow: hidden;
+        display: none;
+    }
+
+    .app__navbar-nav_item span {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transition: opacity .2s linear,visibility 0s .2s;
+        -o-transition: opacity .2s linear,visibility 0s .2s;
+        -moz-transition: opacity .2s linear,visibility 0s .2s;
+        transition: opacity .2s linear,visibility 0s .2s;
+    }
+
+    .app__navbar.-active .app__navbar-col.-center {
+        border-top: 1px solid #0000;
+        background-color: hsl(252, 30%, 17%);
+        display: block;
+        height: max-content;
+        left: 0;
+        opacity: 0.95;
+        padding: 1rem ;
+        position: fixed;
+        top: 5rem;
+        width: 100%;
+    }
+
+    .app__navbar-col.-center ul.d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .app__navbar.-active .app__nav-link span {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0) translateZ(0);
+        -moz-transform: translateY(0) translateZ(0);
+        transform: translateY(0) translateZ(0);
+    }
+
+    .app__nav-links.d-flex, 
+    .app__navbar-col.-center{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app__nav-menu {
+        display: block;
+    }
+
+    .app__navbar.-active .app__nav-menu span:first-child {
+        transform: rotate(45deg);
+    }
+
+    .app__navbar.-active .app__nav-menu span:last-child {
+        transform: rotate(135deg);
+        margin-top: -14px;
+    }
 }
