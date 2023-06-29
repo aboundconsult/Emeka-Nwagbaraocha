@@ -1,0 +1,16 @@
+.app__header {
+    background-color: #6880a2;
+    padding: 8rem 0 12rem;
+}
+
+
+.app__header .-header_title {
+    font-size: 2.5rem;
+}
+.app__header .-header_subtitle {
+    font-size: 1.75rem;
+}
+
+.-header_subtitle svg {
+    color: gold;
+}

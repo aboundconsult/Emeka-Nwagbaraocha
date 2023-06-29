@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Layout from './containers/layout/Layout';
+import Contact from './routes/contact';
 import Homepage from './routes/home';
+import Layout from './containers/layout/Layout';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/about" element={<h1> HELLO ABOUT PAGE </h1>} />
           <Route path="/gallery" element={<h1> HELLO GALLERY </h1>} />
           <Route path="/media" element={<h1> MEDIA </h1>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </BrowserRouter>
