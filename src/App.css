@@ -27,7 +27,7 @@ a {
 }
 
 .app__container {
-  max-width: 1320px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -140,10 +140,14 @@ a {
   justify-content: space-between;
 }
 
-
+@media screen and (max-width: 1320px) {
+  .app__container {
+    padding: 0 2.5rem;
+  }
+}
 
 @media screen and (max-width: 1200px) {
-  .section__container, .app__container {
+  .section__container {
     padding: 2.5rem 1.5rem;
   }
 }

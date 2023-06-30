@@ -1,0 +1,28 @@
+
+.app__media {
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.app__media-header {
+    margin-bottom: 4rem;
+}
+
+.app__media-field {
+    margin-bottom: 5rem;
+}
+
+
+.app__media-body .-field_header h3 {
+    border-bottom: 12px solid var(--primary);
+    font-size: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.app__media-body .-field_header h4 {
+    color: lightgray;
+    text-transform: uppercase;
+    margin-bottom: .45rem;
+}

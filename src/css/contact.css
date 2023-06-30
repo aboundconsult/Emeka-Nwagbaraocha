@@ -1,10 +1,15 @@
 .app__contact {
     margin-bottom: 8rem;
 }
+
+.app__contact .app__header .-header-heading{
+    padding-bottom: 12rem;
+}
+
 .app__contact-body {
     background-color: #e0e0d7;
     border-radius: 8px;
-    margin-top: -8rem;
+    margin-top: -12rem;
     padding: 4rem;
     position: relative;
     z-index: 101;

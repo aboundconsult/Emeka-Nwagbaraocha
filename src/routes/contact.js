@@ -1,6 +1,5 @@
 import { useState  } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
-import { MdWavingHand } from "react-icons/md";
 import Header from "../components/header/Header";
 import "../css/contact.css";
 
@@ -29,9 +28,8 @@ const Contact = () => {
             <div className="app__contact-container">
                 <div className="app__contact-header">
                     <Header 
-                        title={"Contact Me"}
-                        subtitle={"Love to hear from you, Get in Touch"}
-                        Icon={MdWavingHand}
+                        title={"Contact"}
+                        subtitle={"Get in Touch"}
                     />
                 </div>
 

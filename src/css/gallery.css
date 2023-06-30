@@ -1,0 +1,29 @@
+
+.app__gallery {
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.app__gallery-header {
+    margin-bottom: 4rem;
+}
+
+.app__gallery-field {
+    margin-bottom: 5rem;
+}
+
+
+.app__gallery-body .-field_header h3 {
+    border-bottom: 12px solid var(--primary);
+    font-size: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.app__gallery-body .-field_header h4 {
+    color: lightgray;
+    text-transform: uppercase;
+    margin-bottom: .45rem;
+}
+

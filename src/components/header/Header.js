@@ -1,15 +1,15 @@
 import React from "react";
 import "./header.css";
 
-const Header = ({ title, subtitle, Icon }) => {
+const Header = ({ title, subtitle }) => {
     return (
         <div className="app__header">
-            <div className="app__header-container section__container">
-                <h2 className="-header_title"> { title } </h2>
-                <h3 className="-header_subtitle"> 
-                    <span> { subtitle } </span>
-                    { Icon && <Icon /> }
-                </h3>
+            <div className="-header-overlay" />
+            <div className="-header-heading">
+                <div className="section__container">
+                    <h3> { title } </h3>
+                    <h2> { subtitle } </h2>
+                </div>
             </div>
         </div>
     )
