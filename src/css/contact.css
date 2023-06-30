@@ -69,6 +69,12 @@
     font-size: 1.25rem;
 }
 
+@media screen and (max-width: 1360px) {
+    .app__contact .app__header .-header-heading {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .app__form-row.d-flex {
