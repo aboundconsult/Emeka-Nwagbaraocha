@@ -26,7 +26,8 @@ const Footer  = () => {
                 <div className="app__footer-row">
                     <div className="app__container d-flex justify-between item-center gap-2">
                         <div className="app__footer-col -left">
-                        <p> { new Date().getFullYear() } All Rights Reserved. </p>
+                            <p> { new Date().getFullYear() } All Rights Reserved. </p>
+                            <p> site built and maintained by <a href="https://www.aboutconsult.com"> aboundconsult </a></p>
                         </div>
                         <div className="app__footer-col -right -socials">
                             <ul className="app__footer-links d-flex item-center gap-2">

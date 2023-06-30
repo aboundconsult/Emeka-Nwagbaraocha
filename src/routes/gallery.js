@@ -1,5 +1,6 @@
 import "../css/gallery.css";
 import Header from "../components/header/Header";
+import gallery from "../data/gallery";
 
 const Gallery = () => {
     return (
@@ -11,7 +12,7 @@ const Gallery = () => {
                         subtitle={"Moments & Highlights"}
                     />
                 </div>
-                <div className="app__gallery-body section__container">
+                <div className="app__gallery-body app__container">
                     <div className="app__gallery-fields">
                         <div className="app__gallery-field">
                             <div className="-field_header">
@@ -21,10 +22,10 @@ const Gallery = () => {
                                     <div className="-border_line" />
                                 </div>
                             </div>
-                            <div className="-field_body">
-                                {[1,2,3,4,5,6].map(image => (
-                                    <div className="app__gallery-img" key={image}>
-
+                            <div className="-field_body -set">
+                                {gallery?.highlights?.map((image,index) => (
+                                    <div className={`app__gallery-img -gallery-img-${index+1}`} key={image}>
+                                        <img src={image.img} alt="Emeka Nwagbaraocha" />
                                     </div>
                                 ))}
                             </div>
@@ -39,9 +40,9 @@ const Gallery = () => {
                                     <div className="-border_line" />
                                 </div>
                             </div>
-                            <div className="-field_body">
-                                {[1,2,3,4,5,6].map(image => (
-                                    <div className="app__gallery-img" key={image}>
+                            <div className="-field_body -lifestyle">
+                                {gallery?.lifestyle.map((image,index) => (
+                                    <div className={`app__gallery-img ${index+1}`} key={image}>
                                         
                                     </div>
                                 ))}

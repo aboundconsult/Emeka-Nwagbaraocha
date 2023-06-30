@@ -1,0 +1,15 @@
+.app__about {
+    margin-bottom: 5rem;
+}
+
+.app__about-section {
+    margin-bottom: 3rem;
+}
+
+.app__about .-section_header h3 {
+    border-bottom: 12px solid var(--primary);
+    font-size: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: fit-content;
+}

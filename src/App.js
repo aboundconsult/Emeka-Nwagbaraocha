@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
+import About from "./routes/about";
 import Contact from './routes/contact';
 import Gallery from './routes/gallery';
 import Homepage from './routes/home';
@@ -13,7 +14,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Homepage /> } />
-          <Route path="/about" element={<h1> HELLO ABOUT PAGE </h1>} />
+          <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
