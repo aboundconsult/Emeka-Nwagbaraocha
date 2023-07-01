@@ -45,8 +45,12 @@
 }
 
 @media screen and (max-width: 600px) {
+    .app__header .-header-overlay {
+        height: 260px;
+    }
     .app__header .-header-heading {
-        padding: 1rem 1.5rem;
+        margin-top: -180px;
+        padding: 1rem 1rem;
     }
 
     .app__header h3 {

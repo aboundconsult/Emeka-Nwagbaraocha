@@ -85,6 +85,10 @@
         margin-bottom: 1rem;
     }
 
+    .app__contact-body {
+        padding: 4rem 2rem;
+    }
+
     .app__contact button {
         width: 100%;
     }
