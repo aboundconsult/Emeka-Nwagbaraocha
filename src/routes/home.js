@@ -1,7 +1,7 @@
 import "../css/home.css";
 import { Link } from "react-router-dom";
 
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter, BsArrowUpRight } from "react-icons/bs";
 import img1 from "../assets/portfolio5.jpg";
 
 const Homepage = () => {
@@ -12,7 +12,7 @@ const Homepage = () => {
                     <div className="app__home-hero_header section__container">
                         <h2> Hi there! Welcome to <span> Emeka Nwagbaraocha </span> Portfolio website </h2>
                     </div>
-                    <div className="app__home-hero_body app__container">
+                    <div className="app__home-hero_body">
                         <div className="-body_img-grid">
                             <div className={`-hero_img -grid-img-1`}></div>
                             <div className={`-hero_img -grid-img-2 d-flex flex-column gap-2`}>
@@ -32,49 +32,35 @@ const Homepage = () => {
 
             <div className="app__home-about">
                 <div className="app__home-about_container section__container">
-                    <div className="app__home-row d-flex gap-4 item-center">
-                        <div className="app__home-col -left">
-                            <div className="-img_box">
-                                <img src={img1} alt="Emeke Nwagbarocha" />
-                            </div>
-                        </div>
-                        <div className="app__home-col -right">
-                            <div className="-text">
-                                <div className="-text_header">
-                                    <h4> About </h4>
-                                    <h3> My Story </h3>
-                                    <div className="-border_line" />
+                    <div className="app__home-about_body">
+                        <div className="app__home-row d-flex justify-center gap-4
+                        ">
+                            <div className="app__home-col -left -img-section">
+                                <div className="-img-box">
+                                    <div className="-img-overlay" />
+                                    <div className="-img"></div>
                                 </div>
-
-                                <div className="-fields">
-                                    <div className="-field">
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis dignissimos dicta maiores, itaque molestias? Iure debitis minus nobis sint, minima facilis? Magnam esse dolor iste nam corrupti, earum quaerat.</p>
+                            </div>
+                            <div className="app__home-col -right -text-section">
+                                <div className="-text-header">
+                                    <h4> About Me </h4>
+                                </div>
+                                <div className="-text-body">
+                                    <div className="-text-field">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum eaque similique nulla ab sed aliquid, reiciendis est autem officia, consequuntur laudantium eum nihil consectetur dicta distinctio, voluptates suscipit aut. </p>
                                     </div>
-                                    <div className="-field">
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis dignissimos dicta maiores, itaque molestias? Iure debitis minus nobis sint, minima facilis? Magnam esse dolor iste nam corrupti, earum quaerat.</p>
+                                    <div className="-text-field">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum eaque similique nulla ab sed aliquid, reiciendis est autem officia, consequuntur laudantium eum nihil consectetur dicta distinctio, voluptates suscipit aut. </p>
                                     </div>
-                                    <div className="-field">
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis dignissimos dicta maiores, itaque molestias? Iure debitis minus nobis sint, minima facilis? Magnam esse dolor iste nam corrupti, earum quaerat.</p>
-                                    </div>
-                                    <div className="-field">
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis dignissimos dicta maiores, itaque molestias? Iure debitis minus nobis sint, minima facilis? Magnam esse dolor iste nam corrupti, earum quaerat.</p>
-                                    </div>
-                                    <div className="-field">
-                                        <Link to="/about">
-                                            <span> More About Me </span>
+                                    <div className="-text-field">
+                                        <Link to="/about" className="d-flex gap-1 item-center">
+                                            <span> Learn More </span>
+                                            <BsArrowUpRight />
                                         </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="app__home-quote">
-                <div className="app__home-container section__container">
-                    <div className="app__home-row">
-                        <h3> “Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis dignissimos dicta maiores, itaque molestias? Iure debitis minus nobis sint, minima facilis? Magnam esse dolor iste nam corrupti, earum quaerat.” </h3>
                     </div>
                 </div>
             </div>
@@ -142,13 +128,7 @@ const Homepage = () => {
                     </div>
 
                     <div className="app__home-body">
-                        <div className="-gallery_grid">
-                            {[1,2,3,4].map(image => (
-                                <div className={`-grid_item -item-${image}`} key={image}>
-                                    <img src={img1} alt={"Emeka Nwagbaraocha"} />
-                                </div>
-                            ))}
-                        </div>
+                        
                     </div>
                 </div>
             </div>
