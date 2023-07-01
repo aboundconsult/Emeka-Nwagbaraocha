@@ -8,39 +8,23 @@ const Homepage = () => {
     return (
         <div className="app__home">
             <div className="app__home-hero">
-                <div className="app__home-hero_container section__container">
-                    <div className="app__home-hero_row d-flex item-center">
-                        <div className="app__home-hero_col -left">
-                            <h2> Actor, Model & Scriptwriter </h2>
-                            <h1> Emeka  <span> Nwagbaraocha </span> </h1>
-                            <div className="-socials d-flex gap-1 justify-between item-center">
-                                <ul className="d-flex item-center gap-2">
-                                    <li className="app__footer-link">
-                                        <a href="" target="_blank" rel="noreferrer">
-                                            <span>
-                                                <BsInstagram />
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li className="app__footer-link">
-                                        <a href="" target="_blank" rel="noreferrer">
-                                            <span>
-                                                <BsTwitter />
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li className="app__footer-link">
-                                        <a href="" target="_blank" rel="noreferrer">
-                                            <span>
-                                                <BsFacebook />
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
+                <div className="app__home-hero_container">
+                    <div className="app__home-hero_header section__container">
+                        <h2> Hi there! Welcome to <span> Emeka Nwagbaraocha </span> Portfolio website </h2>
+                    </div>
+                    <div className="app__home-hero_body app__container">
+                        <div className="-body_img-grid">
+                            <div className={`-hero_img -grid-img-1`}></div>
+                            <div className={`-hero_img -grid-img-2 d-flex flex-column gap-2`}>
+                                <div className={`-hero_img -grid-img-2a`}></div>
+                                <div className={`-hero_img -grid-img-2b`}></div>
                             </div>
-                        </div>
-                        <div className="app__home-hero_col -right">
-                            <div className="img-box"></div>
+                            <div className={`-hero_img -grid-img-3`}></div>
+                            <div className={`-hero_img -grid-img-4 d-flex flex-column gap-2`}>
+                                <div className={`-hero_img -grid-img-4a`}></div>
+                                <div className={`-hero_img -grid-img-4b`}></div>
+                            </div>
+                            <div className={`-hero_img -grid-img-5`}></div>
                         </div>
                     </div>
                 </div>

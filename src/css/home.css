@@ -1,42 +1,78 @@
-
-.app__home-hero {
-    background-color: #6880a2;
-    position: relative;
+.app__home {
+    padding: 4rem 0;
 }
 
-.app__home-hero svg {
-    font-size: 1.75rem;
+/* Hero Section */
+.app__home-hero {}
+.app__home-hero_header {
+    margin-bottom: 2.5rem;
 }
 
-.app__home-hero_col {
-    flex: .5;
+.app__home-hero_header h2 {
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    width: 80%;
 }
 
-.app__home-hero h2 {
-    font-size: .95rem;
-    font-weight: 400;
-    line-height: 100%;
-    text-transform: uppercase;
-}
-
-.app__home-hero h1 {
-    font-size: 3rem;
-}
-
-.app__home-hero h1 span {
+.app__home-hero_header h2 span {
     color: var(--primary);
 }
 
-
-.app__home-hero_col.-right .img-box {
-    height: 580px;
+.app__home-hero_body {}
+.app__home-hero_body .-body_img-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
-.-socials {
-    margin-top: 1rem;
+.app__home-hero .-hero_img {
+    border-radius: 12px;
 }
+
+.-grid-img-1 {
+    background-color: crimson;
+    height: 240px;
+}
+
+.-grid-img-2a {
+    background-color: coral;
+    height: 120px;
+}
+.-grid-img-2b {
+    background-color: #1a2b3c;
+    height: 240px;
+}
+
+.-grid-img-3 {
+    background-color: teal;
+    height: 480px;
+}
+
+.-grid-img-4a {
+    background-color: dodgerblue;
+    height: 240px;
+}
+.-grid-img-4b {
+    background-color: gold;
+    height: 120px;
+}
+
+.-grid-img-5 {
+    background-color: #5d7380;
+    height: 180px;
+}
+
+
 
 /* Story || About */
+.app__home-about,
+.app__home-gallery {
+    display: none;
+}
+
 .app__home-about .app__home-col {
     flex: .5;
 }

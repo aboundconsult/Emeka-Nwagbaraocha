@@ -69,8 +69,10 @@
         padding: 2.5rem 1.5rem;
     }
 
-    .app__footer-row:last-child {
-        padding: .5rem 0;
+    .app__footer-row:last-child > .d-flex {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .app__footer-body.d-flex {
@@ -86,6 +88,8 @@
         align-self: flex-end;
     }
 }
+
+
 
 
 @media screen and (max-width: 400px) {
