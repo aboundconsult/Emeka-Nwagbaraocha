@@ -14,6 +14,20 @@ body {
 :root {
   --primary: #3c86f1;
   --dark: #24272a;
+  --header-text:5rem;
+  --text-hero: 2.5rem;
+  --text-title: 3rem;
+  --text-md: 1.2rem;
+  --body-text:.8125rem;
+  --link-text:1rem;
+  --nav-height:;
+  --nav-link-text:1.125rem;;
+  --spcaing-xs: .5rem;
+  --spacing-sm: 1rem;
+  --spacing-md:1.5rem;
+  --spacing-lg:2rem;
+  --spacing-xl:2.5rem;
+  --spacing-xxl:3rem;
 }
 
 a {
@@ -148,7 +162,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .section__container {
-    padding: 2.5rem 2.5rem;
+    padding: 2.5rem 1.5rem;
   }
 }
 

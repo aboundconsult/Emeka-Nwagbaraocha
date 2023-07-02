@@ -271,7 +271,7 @@
     .app__navbar-nav {
         position: fixed;
         top: 0;
-        left: 20px;
+        left: 2rem;
         right: 0;
         bottom: 0;
         display: -webkit-box;

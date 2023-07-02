@@ -1,16 +1,67 @@
+import { useRef } from "react";
 import "../css/home.css";
 import { Link } from "react-router-dom";
 
-import { BsFacebook, BsInstagram, BsTwitter, BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import img1 from "../assets/portfolio5.jpg";
 
 const Homepage = () => {
+    const about_ref = useRef(null);
+    const scroll_to_about = () => {
+        about_ref.current.scrollIntoView({
+            behaviour: "smooth"
+        });
+    };
+
     return (
         <div className="app__home">
             <div className="app__home-hero">
                 <div className="app__home-hero_container">
                     <div className="app__home-hero_header section__container">
                         <h2> Hi there! Welcome to <span> Emeka Nwagbaraocha </span> Portfolio website </h2>
+                    </div>
+                    <div className="app__home-hero_extras">
+                        <div className="-hero-about d-flex justify-between">
+                            <div className="-left">
+                                <h5> Quick whoami </h5>
+                                <div className="-hero-fields">
+                                    <div className="-hero-field d-flex item-center gap-0">
+                                        <div className="-bullet" />
+                                        <h4> Actor </h4>
+                                    </div>
+                                    <div className="-hero-field d-flex item-center gap-0">
+                                        <div className="-bullet" />
+                                        <h4> Model </h4>
+                                    </div>
+                                    <div className="-hero-field d-flex item-center gap-0">
+                                        <div className="-bullet" />
+                                        <h4> ScriptWriter </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="-center">
+                                <div className="-socials d-flex item-center justify-center gap-2">
+                                    <h5> My Socials </h5>
+                                    <BsArrowUpRight className="-arrow" />
+                                    <div className="d-flex item-center gap-2">
+                                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                                            <BsFacebook />
+                                        </a>
+                                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                                            <BsTwitter />
+                                        </a>
+                                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                                            <BsInstagram />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="-right">
+                                <div className="-scroller d-flex item-center justify-center" onClick={scroll_to_about}>
+                                    <BsArrowUpRight />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="app__home-hero_body">
                         <div className="-body_img-grid">
@@ -30,7 +81,7 @@ const Homepage = () => {
                 </div>
             </div>
 
-            <div className="app__home-about">
+            <div className="app__home-about" ref={about_ref}>
                 <div className="app__home-about_container section__container">
                     <div className="app__home-about_body">
                         <div className="app__home-row d-flex justify-center gap-4
