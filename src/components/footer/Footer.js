@@ -27,26 +27,26 @@ const Footer  = () => {
                     <div className="app__container d-flex justify-between item-center gap-2">
                         <div className="app__footer-col -left">
                             <p> { new Date().getFullYear() } All Rights Reserved. </p>
-                            <p> site built and maintained by <a href="https://www.aboutconsult.com"> aboundconsult </a></p>
+                            <p> site built and maintained by <a href="https://www.aboundconsult.com"> aboundconsult </a></p>
                         </div>
                         <div className="app__footer-col -right -socials">
                             <ul className="app__footer-links d-flex item-center gap-2">
                                 <li className="app__footer-link">
-                                    <a href="" target="_blank" rel="noreferrer">
+                                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                                         <span>
                                             <BsInstagram />
                                         </span>
                                     </a>
                                 </li>
                                 <li className="app__footer-link">
-                                    <a href="" target="_blank" rel="noreferrer">
+                                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                                         <span>
                                             <BsTwitter />
                                         </span>
                                     </a>
                                 </li>
                                 <li className="app__footer-link">
-                                    <a href="" target="_blank" rel="noreferrer">
+                                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                                         <span>
                                             <BsFacebook />
                                         </span>

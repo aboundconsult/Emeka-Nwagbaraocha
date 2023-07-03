@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.app__media-body {
+    padding: 0 4rem;
+}
+
 .app__media-header {
     margin-bottom: 4rem;
 }
@@ -25,4 +29,11 @@
     color: lightgray;
     text-transform: uppercase;
     margin-bottom: .45rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .app__media-body {
+        padding: 0 2rem;
+    }
 }

@@ -3,7 +3,6 @@ import "../css/home.css";
 import { Link } from "react-router-dom";
 
 import { BsArrowUpRight, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import img1 from "../assets/portfolio5.jpg";
 
 const Homepage = () => {
     const about_ref = useRef(null);
@@ -84,7 +83,7 @@ const Homepage = () => {
             <div className="app__home-about" ref={about_ref}>
                 <div className="app__home-about_container section__container">
                     <div className="app__home-about_body">
-                        <div className="app__home-row d-flex justify-center gap-4
+                        <div className="app__home-row d-flex item-center justify-center gap-4
                         ">
                             <div className="app__home-col -left -img-section">
                                 <div className="-img-box">
