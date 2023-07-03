@@ -533,4 +533,9 @@
     .app__home-hero_header h2 {
         width: 100%;
     }
+    .app__home-about .-img-section,
+    .app__home-about .-img-overlay,
+    .app__home-about .-img {
+        width: 90%;
+    }
 }

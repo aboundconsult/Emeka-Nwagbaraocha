@@ -106,8 +106,9 @@
 
 
 @media screen and (max-width: 480px) {
-    .app__about .-img,
-    .app__about .-img-overlay {
+    .app__about .-img-section,
+    .app__about .-img-overlay,
+    .app__about .-img {
         width: 90%;
     }
 }
